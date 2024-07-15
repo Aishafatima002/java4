@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=0.5, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* .container{
+            display: flex;
+        }  */
+        .box{
+            width: 100px;
+            height: 100px;
+           background-color:  blueviolet;
+           border: 2px solid blue ;
+
+        }
+        .box2
+        {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            border: 2px solid red;
+        }
+       
+        .key1{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(218, 28, 186);
+            border: 2px solid rgb(231, 116, 116);
+        }
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box" onmouseover="console.log('you are inside box')" ></div>
+    <div class="box2" onmousedown="this.style.backgroundColor='red'"></div>
+    <div class="box2" onmouseup="this.style.backgroundColor='pink'"></div>
+    <div class="box2" onmousemove="this.style.backgroundColor='green'"></div>
+    <div class="box2" onmouseenter="this.style.backgroundColor='blue'"></div>
+    <div class="box2" onmouseleave="this.style.backgroundColor='orange'"></div>
+    <div class="box2" onmouseout="this.style.backgroundColor='yellow'"></div>
+   
+        <div class="key1" tabindex="0" onkeydown="this.style.backgroundColor='salmon'"></div>
+        <div class="key1" tabindex="0" onkeyup="this.style.backgroundColor='green'"></div>
+        <div class="key1" tabindex="0" onkeypress="this.style.backgroundColor='black'"></div>
+        <div class="load" onload="console.log('loading')">start</div>
+        Email:<br>
+<input  type="text" size="30" onFocus="this.style.backgroundColor='yellow';"><br>
+Email:<br>
+<input type="text" size="30" onblur="this.style.backgroundColor='yellow';">
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<button onclick="console.log('you can click me many times')">click me</button>
+<button ondblclick="console.log('you can click me many times')">click me 2x</button>
+<a href="#" target="_blank" onclick="alert('hey')">click</a>
+
+
+
+
+<script>
+    // function sayHi() {
+    //     alert("hello wotld")
+    // }
+    // sayHi();
+   /* // function sayBye() {
+    //     alert("good bye")
+    // }
+    sayBye();*/
+    // on focus use for input
+</script>
+</body>
+</html>
