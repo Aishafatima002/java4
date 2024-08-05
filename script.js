@@ -44,12 +44,48 @@
  
  
 //
-function changecolor ( newcolor) {
-    const btn=document.getElementById("para")
-    btn.style.color=newcolor
-    btn.style.fontSize="34px"
-    btn.style.fontFamily="italic"
+// function changecolor ( newcolor) {
+//     const btn=document.getElementById("para")
+//     btn.style.color=newcolor
+//     btn.style.fontSize="34px"
+//     btn.style.fontFamily="italic"
+// }
+
+
+// document.querySelector("p").style.backgroundColor="yellow"
+//set interval :continously run//set time out :only one time
+
+// let button=document.getElementById("btn")
+// button.addEventListener("dblclick",()=> {
+//     document.querySelector(".container").innerHTML="<b>you wre clicked</b>  enjoy your click"
+// })
+
+
+// button.addEventListener("contextmenu",()=> {
+//     document.querySelector(".container").innerHTML="<b>you wre clicked</b>  enjoy your click"
+// })
+// let button=document.getElementById("btn")
+// button.addEventListener("mouseenter",()=> {
+//     document.querySelector(".container").innerHTML="<b>you wre clicked</b>  enjoy your click"
+// })
+
+// let button=document.getElementById("btn")
+// button.addEventListener("keyup",(e)=> {
+//     document.querySelector(".container").innerHTML="<b>you wre clicked</b>  enjoy your click"
+//     console.log(e)
+// })
+
+function myFunction() {
+    let y=document.getElementById("frame")
+    console.log(y)
+    y.value=y.value.toUpperCase()
 }
-
-
-document.querySelector("p").style.backgroundColor="yellow"
+function myFunction1() {
+   document.getElementById("email").innerHTML="you press the key inside input field"
+   document.getElementById("email").style.color='yellow'
+}
+function myFunction2() {
+    alert("you  down the key inside the input field")
+    
+ }
+ console.log(myFunction2())
